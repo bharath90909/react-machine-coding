@@ -11,7 +11,7 @@ function LoadingProducts() {
     setIsLoading(true);
     async function fetchData() {
       const res = await fetch(
-        `https://dummyjson.com/products?limit=10&skip=${count * 10}`
+        `https://dummyjson.com/products?limit=10&skip=${count * 20}`
       );
       try {
         if (!res.ok) {
@@ -56,7 +56,12 @@ function LoadingProducts() {
           />
         </div>
       )}
-      <button onClick={() => setCount((prev) => prev + 1)}>Load More</button>
+      <button
+        onClick={() => setCount((prev) => prev + 1)}
+        disabled={count === 4}
+      >
+        Load More
+      </button>
     </div>
   );
 }
