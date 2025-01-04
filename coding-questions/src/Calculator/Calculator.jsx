@@ -61,6 +61,7 @@ function Calculator() {
             type="text"
             onChange={(e) => setInput(e.target.value)}
             value={error || input}
+            className="input"
           />
         </div>
         <div className="buttons">
