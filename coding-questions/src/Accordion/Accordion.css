@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.accordion-container {
+  width: 30vw;
+  color: aliceblue;
+  /* height: 50vw; */
+  margin: 20px auto;
+  border: 2px solid red;
+}
+.accordion {
+  background-color: blue;
+  margin-bottom: 20px;
+}
+.accordion-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.accordion-answer {
+  text-align: center;
+  background-color: blueviolet;
+}
