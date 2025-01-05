@@ -40,6 +40,7 @@ function Calculator() {
         setInput("");
         break;
       case "X":
+        //or simply do let str=input.slice(0,-1)
         let arr = input.split("");
         arr.pop();
         let str = arr.join("");
