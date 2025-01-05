@@ -11,6 +11,10 @@ import RouterPage from "./Nested Menu/RouterPage";
 import RandomColor from "./Random Color/RandomColor";
 import StarRating from "./Star Rating/StarRating";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ThemeToggle from "./Theme Toggle With LocalStorage/ThemeToggle";
+import ScrollIndicator from "./Scroll Indicator/ScrollIndicator";
+import TabsSwitching from "./Tabs Switching/TabsSwitching";
+import Modal from "./Modal/Modal";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -43,7 +47,11 @@ function App() {
   // return <Calculator />;
   // return <CheckBoxToggle />;
   // return <FilterWithCheckBox />;
-  return <RouterProvider router={appRouter} />;
+  // return <RouterProvider router={appRouter} />;
+  // return <ThemeToggle />;
+  // return <ScrollIndicator />;
+  // return <TabsSwitching />;
+  return <Modal />;
 }
 
 export default App;
