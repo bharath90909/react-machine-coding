@@ -15,6 +15,9 @@ import ThemeToggle from "./Theme Toggle With LocalStorage/ThemeToggle";
 import ScrollIndicator from "./Scroll Indicator/ScrollIndicator";
 import TabsSwitching from "./Tabs Switching/TabsSwitching";
 import Modal from "./Modal/Modal";
+import GithubProfileFinder from "./GitHub Profile Finder/GithubProfileFinder";
+import OtpVerification from "./OTP Verification/OtpVerification";
+import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArrows";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -51,7 +54,10 @@ function App() {
   // return <ThemeToggle />;
   // return <ScrollIndicator />;
   // return <TabsSwitching />;
-  return <Modal />;
+  // return <Modal />;
+  // return <GithubProfileFinder />;
+  // return <OtpVerification />;
+  return <OtpVerificationWithArrows />;
 }
 
 export default App;

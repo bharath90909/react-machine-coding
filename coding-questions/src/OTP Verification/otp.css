@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  margin-right: 2px;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  transition: 0.8s all;
+}
+
+.button {
+  background-color: rgb(226, 43, 95);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button:disabled {
+  background-color: rgb(19, 22, 23);
+}
