@@ -1,0 +1,16 @@
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Class for the animation */
+.slide-in {
+  animation: slideIn 0.8s ease-in;
+}

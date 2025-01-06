@@ -18,6 +18,8 @@ import Modal from "./Modal/Modal";
 import GithubProfileFinder from "./GitHub Profile Finder/GithubProfileFinder";
 import OtpVerification from "./OTP Verification/OtpVerification";
 import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArrows";
+import PasswordVerification from "./Password Verification.jsx/PasswordVerification";
+import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -57,7 +59,9 @@ function App() {
   // return <Modal />;
   // return <GithubProfileFinder />;
   // return <OtpVerification />;
-  return <OtpVerificationWithArrows />;
+  // return <OtpVerificationWithArrows />;
+  // return <PasswordVerification />;
+  return <InfiniteScroll />;
 }
 
 export default App;
