@@ -20,6 +20,7 @@ import OtpVerification from "./OTP Verification/OtpVerification";
 import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArrows";
 import PasswordVerification from "./Password Verification.jsx/PasswordVerification";
 import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
+import QuizApp from "./Quiz App/QuizApp";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -61,7 +62,8 @@ function App() {
   // return <OtpVerification />;
   // return <OtpVerificationWithArrows />;
   // return <PasswordVerification />;
-  return <InfiniteScroll />;
+  // return <InfiniteScroll />;
+  return <QuizApp />;
 }
 
 export default App;
