@@ -8,6 +8,7 @@ import ImageSlider from "./Image Slider/ImageSlider";
 import LoadingProducts from "./Loading Products/LoadingProducts";
 import NestedMenu from "./Nested Menu/NestedMenu";
 import RouterPage from "./Nested Menu/RouterPage";
+import Practice from "./Quiz App/Practice";
 import RandomColor from "./Random Color/RandomColor";
 import StarRating from "./Star Rating/StarRating";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -21,6 +22,11 @@ import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArr
 import PasswordVerification from "./Password Verification.jsx/PasswordVerification";
 import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
 import QuizApp from "./Quiz App/QuizApp";
+import TodoApp from "./Todo App/TodoApp";
+import UserLogin from "./User Login/UserLogin";
+import LoginForm from "./User Login/LoginForm";
+import HomePage from "./User Login/HomePage";
+import UserProvider from "./User Login/UserProvider";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -63,7 +69,30 @@ function App() {
   // return <OtpVerificationWithArrows />;
   // return <PasswordVerification />;
   // return <InfiniteScroll />;
-  return <QuizApp />;
+  // return <QuizApp />;/
+  // return <Practice />;
+  // return <TodoApp />;
+  const loginRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <UserLogin />,
+      children: [
+        {
+          path: "/login",
+          element: <LoginForm />,
+        },
+        {
+          path: "/homepage",
+          element: <HomePage />,
+        },
+      ],
+    },
+  ]);
+  return (
+    <UserProvider>
+      <RouterProvider router={loginRouter}></RouterProvider>
+    </UserProvider>
+  );
 }
 
 export default App;
