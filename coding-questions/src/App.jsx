@@ -8,6 +8,7 @@ import ImageSlider from "./Image Slider/ImageSlider";
 import LoadingProducts from "./Loading Products/LoadingProducts";
 import NestedMenu from "./Nested Menu/NestedMenu";
 import RouterPage from "./Nested Menu/RouterPage";
+import SearchBar from "./SearchBar/SearchBar";
 // import Practice from "./Quiz App/Practice";
 import RandomColor from "./Random Color/RandomColor";
 import StarRating from "./Star Rating/StarRating";
@@ -94,7 +95,8 @@ function App() {
   //     <RouterProvider router={loginRouter}></RouterProvider>
   //   </UserProvider>
   // );
-  return <Practice />;
+  // return <Practice />;
+  return <SearchBar />;
 }
 
 export default App;
