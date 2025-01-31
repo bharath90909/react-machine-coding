@@ -1,5 +1,5 @@
 import Accordion from "./Accordion/Accordion";
-import AppLayout from "./AppLayout";
+// import AppLayout from "./AppLayout";
 import Calculator from "./Calculator/Calculator";
 import CheckBoxToggle from "./CheckBox Toggle/CheckBoxToggle";
 import FilterWithCheckBox from "./CheckBox Toggle/FilterWithCheckBox";
@@ -21,7 +21,7 @@ import GithubProfileFinder from "./GitHub Profile Finder/GithubProfileFinder";
 import OtpVerification from "./OTP Verification/OtpVerification";
 import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArrows";
 import PasswordVerification from "./Password Verification.jsx/PasswordVerification";
-import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
+// import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
 import QuizApp from "./Quiz App/QuizApp";
 import TodoApp from "./Todo App/TodoApp";
 import UserLogin from "./User Login/UserLogin";
@@ -32,6 +32,11 @@ import Practice from "./Random Color/Practice";
 import CheckBoxTodo from "./CheckBox Todo/CheckBoxTodo";
 import ScrollTop from "./Scroll Top/ScrollTop";
 import Pagination from "./Pagination/Pagination";
+import InfiniteScroll from "./Pagination/InfiniteScroll";
+import AppLayout from "./Router Navigation/AppLayout";
+import Home from "./Router Navigation/Home";
+import About from "./Router Navigation/About";
+import Contact from "./Router Navigation/Contact";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -39,22 +44,42 @@ function App() {
       element: <AppLayout />,
       children: [
         {
-          path: "/home/:dynamicID",
-          element: <RouterPage />,
+          path: "/home",
+          element: <Home />,
         },
-
         {
-          path: "/about/:dynamicID",
-          element: <RouterPage />,
+          path: "/about",
+          element: <About />,
         },
-
         {
-          path: "/contact/:dynamicID",
-          element: <RouterPage />,
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
   ]);
+  // const appRouter = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <AppLayout />,
+  //     children: [
+  //       {
+  //         path: "/home/:dynamicID",
+  //         element: <RouterPage />,
+  //       },
+
+  //       {
+  //         path: "/about/:dynamicID",
+  //         element: <RouterPage />,
+  //       },
+
+  //       {
+  //         path: "/contact/:dynamicID",
+  //         element: <RouterPage />,
+  //       },
+  //     ],
+  //   },
+  // ]);
   // return <Accordion />;
   // return <RandomColor />;
   // return <StarRating />;/
@@ -102,7 +127,9 @@ function App() {
   // return <SearchBar />;
   // return <CheckBoxTodo />;
   // return <ScrollTop />;
-  return <Pagination />;
+  // return <Pagination />;
+  // return <InfiniteScroll />;
+  return <RouterProvider router={appRouter} />;
 }
 
 export default App;

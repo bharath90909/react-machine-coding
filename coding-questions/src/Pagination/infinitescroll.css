@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.infinite-container {
+  width: 95%;
+  height: 100vh;
+  max-width: 680px;
+  margin: 1.5rem auto;
+  border: 1px solid red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.infinite-container p {
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.infinite-container p {
+  animation: 0.5s animate ease-in;
+}
