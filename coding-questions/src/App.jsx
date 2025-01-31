@@ -30,6 +30,7 @@ import HomePage from "./User Login/HomePage";
 import UserProvider from "./User Login/UserProvider";
 import Practice from "./Random Color/Practice";
 import CheckBoxTodo from "./CheckBox Todo/CheckBoxTodo";
+import ScrollTop from "./Scroll Top/ScrollTop";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -98,7 +99,8 @@ function App() {
   // );
   // return <Practice />;
   // return <SearchBar />;
-  return <CheckBoxTodo />;
+  // return <CheckBoxTodo />;
+  return <ScrollTop />;
 }
 
 export default App;
