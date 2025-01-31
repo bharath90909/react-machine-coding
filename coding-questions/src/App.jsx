@@ -29,6 +29,7 @@ import LoginForm from "./User Login/LoginForm";
 import HomePage from "./User Login/HomePage";
 import UserProvider from "./User Login/UserProvider";
 import Practice from "./Random Color/Practice";
+import CheckBoxTodo from "./CheckBox Todo/CheckBoxTodo";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -96,7 +97,8 @@ function App() {
   //   </UserProvider>
   // );
   // return <Practice />;
-  return <SearchBar />;
+  // return <SearchBar />;
+  return <CheckBoxTodo />;
 }
 
 export default App;
