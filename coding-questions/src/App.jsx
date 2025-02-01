@@ -37,6 +37,7 @@ import AppLayout from "./Router Navigation/AppLayout";
 import Home from "./Router Navigation/Home";
 import About from "./Router Navigation/About";
 import Contact from "./Router Navigation/Contact";
+import AutoSearch from "./Auto Search Fill/AutoSearch";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -129,7 +130,8 @@ function App() {
   // return <ScrollTop />;
   // return <Pagination />;
   // return <InfiniteScroll />;
-  return <RouterProvider router={appRouter} />;
+  // return <RouterProvider router={appRouter} />;\
+  return <AutoSearch />;
 }
 
 export default App;
