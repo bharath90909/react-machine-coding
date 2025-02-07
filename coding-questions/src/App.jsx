@@ -1,44 +1,46 @@
-import Accordion from "./Accordion/Accordion";
+import Accordion from "./accordion/Accordion";
 // import AppLayout from "./AppLayout";
-import Calculator from "./Calculator/Calculator";
-import CheckBoxToggle from "./CheckBox Toggle/CheckBoxToggle";
-import FilterWithCheckBox from "./CheckBox Toggle/FilterWithCheckBox";
-import DigitalClock from "./Digital Clock/DigitalClock";
-import ImageSlider from "./Image Slider/ImageSlider";
-import LoadingProducts from "./Loading Products/LoadingProducts";
-import NestedMenu from "./Nested Menu/NestedMenu";
-import RouterPage from "./Nested Menu/RouterPage";
-import SearchBar from "./SearchBar/SearchBar";
+import Calculator from "./calculator/Calculator";
+import CheckBoxToggle from "./checkbox-toggle/CheckBoxToggle";
+import FilterWithCheckBox from "./checkbox-toggle/FilterWithCheckBox";
+import DigitalClock from "./digital-clock/DigitalClock";
+import ImageSlider from "./image-slider/ImageSlider";
+import LoadingProducts from "./loading-products/LoadingProducts";
+import NestedMenu from "./nested-menu/NestedMenu";
+import RouterPage from "./nested-menu/RouterPage";
+import SearchBar from "./search-bar/SearchBar";
 // import Practice from "./Quiz App/Practice";
-import RandomColor from "./Random Color/RandomColor";
-import StarRating from "./Star Rating/StarRating";
+import RandomColor from "./random-color/RandomColor";
+import StarRating from "./star-rating/StarRating";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ThemeToggle from "./Theme Toggle With LocalStorage/ThemeToggle";
-import ScrollIndicator from "./Scroll Indicator/ScrollIndicator";
-import TabsSwitching from "./Tabs Switching/TabsSwitching";
-import Modal from "./Modal/Modal";
-import GithubProfileFinder from "./GitHub Profile Finder/GithubProfileFinder";
-import OtpVerification from "./OTP Verification/OtpVerification";
-import OtpVerificationWithArrows from "./OTP Verification/OtpVerificationWithArrows";
-import PasswordVerification from "./Password Verification.jsx/PasswordVerification";
+import ThemeToggle from "./theme-toggle-with-localStorage/ThemeToggle";
+import ScrollIndicator from "./scroll-indicator/ScrollIndicator";
+import TabsSwitching from "./tabs-switching/TabsSwitching";
+import Modal from "./modal/Modal";
+import GithubProfileFinder from "./gitHub-profile-finder/GithubProfileFinder";
+import OtpVerification from "./otp-verification/OtpVerification";
+import OtpVerificationWithArrows from "./otp-verification/OtpVerificationWithArrows";
+import PasswordVerification from "./password- verification.jsx/PasswordVerification";
 // import InfiniteScroll from "./Infinite Scroll/InfiniteScroll";
-import QuizApp from "./Quiz App/QuizApp";
-import TodoApp from "./Todo App/TodoApp";
-import UserLogin from "./User Login/UserLogin";
-import LoginForm from "./User Login/LoginForm";
-import HomePage from "./User Login/HomePage";
-import UserProvider from "./User Login/UserProvider";
-import Practice from "./Random Color/Practice";
-import CheckBoxTodo from "./CheckBox Todo/CheckBoxTodo";
-import ScrollTop from "./Scroll Top/ScrollTop";
-import Pagination from "./Pagination/Pagination";
-import InfiniteScroll from "./Pagination/InfiniteScroll";
-import AppLayout from "./Router Navigation/AppLayout";
-import Home from "./Router Navigation/Home";
-import About from "./Router Navigation/About";
-import Contact from "./Router Navigation/Contact";
-import AutoSearch from "./Auto Search Fill/AutoSearch";
+import QuizApp from "./quiz-app/QuizApp";
+import TodoApp from "./todo-app/TodoApp";
+import UserLogin from "./user-login/UserLogin";
+import LoginForm from "./user-login/LoginForm";
+import HomePage from "./user-login/HomePage";
+import UserProvider from "./user-login/UserProvider";
+import Practice from "./random-color/Practice";
+import CheckBoxTodo from "./checkbox-todo/CheckBoxTodo";
+import ScrollTop from "./scroll-top/ScrollTop";
+import Pagination from "./pagination/Pagination";
+import InfiniteScroll from "./pagination/InfiniteScroll";
+import AppLayout from "./router-navigation/AppLayout";
+import Home from "./router-navigation/Home";
+import About from "./router-navigation/About";
+import Contact from "./router-navigation/Contact";
+import AutoSearch from "./auto-search-fill/AutoSearch";
 import Theme from "./custom-hook/Theme";
+import DynamicImport from "./dynamic-import/DynamicImport";
+import DropDown from "./drop-down/DropDown";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -132,8 +134,10 @@ function App() {
   // return <Pagination />;
   // return <InfiniteScroll />;
   // return <RouterProvider router={appRouter} />;\
-  return <Theme />;
+  // return <Theme />;
   // return <AutoSearch />;
+  // return <DynamicImport/>
+  return <DropDown/>
 }
 
 export default App;
