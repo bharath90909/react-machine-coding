@@ -38,6 +38,7 @@ import Home from "./Router Navigation/Home";
 import About from "./Router Navigation/About";
 import Contact from "./Router Navigation/Contact";
 import AutoSearch from "./Auto Search Fill/AutoSearch";
+import Theme from "./custom-hook/Theme";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -131,7 +132,8 @@ function App() {
   // return <Pagination />;
   // return <InfiniteScroll />;
   // return <RouterProvider router={appRouter} />;\
-  return <AutoSearch />;
+  return <Theme />;
+  // return <AutoSearch />;
 }
 
 export default App;
