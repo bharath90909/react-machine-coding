@@ -11,6 +11,7 @@ const countries = [
 ];
 function DropDown() {
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [length, setLength] = useState(0);
   return (
     <div>
       <label>Country:</label>

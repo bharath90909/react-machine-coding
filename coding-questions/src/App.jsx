@@ -43,6 +43,7 @@ import DynamicImport from "./dynamic-import/DynamicImport";
 // import DropDown from "./drop-down/DropDown";
 import DropDown from "./searchable-dropdown/DropDown";
 import RestaurantCard from "./multi-step-form/RestaurantCard";
+import Hoc from "./hoc/HOC";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -141,7 +142,8 @@ function App() {
   // return <DynamicImport/>
   // return <DropDown/>
   // return <RestaurantCard />;
-  return <DropDown />;
+  // return <DropDown />;
+  return <Hoc />;
 }
 
 export default App;
